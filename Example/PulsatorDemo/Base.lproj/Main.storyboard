@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -222,7 +222,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-rN-3V8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="351"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="39F-Wg-tNQ">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="ic_cpc_logo" translatesAutoresizingMaskIntoConstraints="NO" id="39F-Wg-tNQ">
                                         <rect key="frame" x="162.5" y="150.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="6eu-Rc-zNc"/>
@@ -243,7 +243,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.37819102112676056" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="39F-Wg-tNQ" firstAttribute="centerY" secondItem="zbM-rN-3V8" secondAttribute="centerY" id="Bbf-F4-rPr"/>
                                     <constraint firstItem="39F-Wg-tNQ" firstAttribute="centerX" secondItem="zbM-rN-3V8" secondAttribute="centerX" id="N5D-BR-nAc"/>
@@ -254,7 +254,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.37254901959999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rrO-M5-Ok2" secondAttribute="trailing" id="6TY-bl-SDP"/>
                             <constraint firstItem="zbM-rN-3V8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bq7-la-b0p"/>
@@ -276,6 +276,7 @@
                         <outlet property="durationSlider" destination="um5-XN-VwS" id="8BU-VU-wt4"/>
                         <outlet property="gLabel" destination="vzc-Io-25h" id="OXN-TN-CBz"/>
                         <outlet property="gSlider" destination="u4T-eY-3aB" id="pCr-v1-LQb"/>
+                        <outlet property="imvLogo" destination="39F-Wg-tNQ" id="B9Q-Q6-LrB"/>
                         <outlet property="rLabel" destination="Nx8-BK-xS1" id="a7R-jJ-Wag"/>
                         <outlet property="rSlider" destination="Wbk-q8-ENn" id="4H4-XZ-WAj"/>
                         <outlet property="radiusLabel" destination="mwu-Vl-a1e" id="DoX-An-711"/>
@@ -334,6 +335,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="285" height="599"/>
+        <image name="ic_cpc_logo" width="51" height="51"/>
     </resources>
 </document>

@@ -17,17 +17,23 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
 
     fileprivate let pulse = CALayer()
     fileprivate var animationGroup: CAAnimationGroup!
-    fileprivate var alpha: CGFloat = 0.45
+    fileprivate var alpha: CGFloat = 1
 
     override open var backgroundColor: CGColor? {
         didSet {
             pulse.backgroundColor = backgroundColor
-            guard let backgroundColor = backgroundColor else {return}
-            let oldAlpha = alpha
-            alpha = backgroundColor.alpha
-            if alpha != oldAlpha {
-                recreate()
-            }
+        }
+    }
+
+    override open var borderWidth: CGFloat {
+        didSet {
+          pulse.borderWidth = borderWidth
+        }
+    }
+
+    override open var borderColor: CGColor? {
+        didSet {
+          pulse.borderColor = borderColor
         }
     }
     
@@ -82,7 +88,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     }
     
     /// The value of this property should be ranging from @c 0 to @c 1 (exclusive).
-    open var keyTimeForHalfOpacity: Float = 0.2 {
+    open var keyTimeForHalfOpacity: Float = 0.1 {
         didSet {
             recreate()
         }

@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var gLabel: UILabel!
     @IBOutlet weak var bLabel: UILabel!
     @IBOutlet weak var aLabel: UILabel!
+    @IBOutlet weak var imvLogo: UIImageView!
 
     let pulsator = Pulsator()
     
@@ -37,6 +38,9 @@ class ViewController: UIViewController {
         sourceView.layer.superlayer?.insertSublayer(pulsator, below: sourceView.layer)
         setupInitialValues()
         pulsator.start()
+        pulsator.borderColor = UIColor(red: 0/255, green: 45/255, blue: 164/255, alpha: 1).cgColor
+        pulsator.borderWidth = 5
+        pulsator.backgroundColor = UIColor.clear.cgColor
     }
 
     override func didReceiveMemoryWarning() {
